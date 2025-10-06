@@ -11,24 +11,18 @@ This project is a comprehensive retail analysis dashboard built with Power BI. T
 Here's a look at the different pages of the dashboard:
 
 **1. Home Page** - A summary of the most important Key Performance Indicators (KPIs).
-![Home Page](images/01_HomePage.png)
 
 **2. Orders Overview** - A deep dive into order trends, shipping modes, and sales vs. profit over time.
-![Orders Overview](images/03_OrdersOverview.png)
 
 **3. Products Overview** - Analysis of product performance, sales by category, and top-selling items.
-![Products Overview](images/04_ProductsOverview.png)
 
 **4. Customers Overview** - Insights into customer segments, geographic distribution, and top customers by sales.
-![Customers Overview](images/05_CustomersOverview.png)
 
 ---
 
 ## Data Model
 
 The project follows a star schema, which is a best practice for Power BI data modeling. This optimizes performance and simplifies DAX calculations by connecting a central fact table (`FactOrder`) to multiple dimension tables (`DimProduct`, `DimCustomer`, `DimLocation`, `DimDate`).
-
-![Data Model](images/02_DataModel.png)
 
 ---
 
