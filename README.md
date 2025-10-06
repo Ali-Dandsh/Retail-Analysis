@@ -1,49 +1,46 @@
-# Retail-Analysis
-# لوحة معلومات تحليل مبيعات التجزئة باستخدام Power BI
+# Retail Analysis Dashboard using Power BI
 
-## نظرة عامة على المشروع
+## Project Overview
 
-هذا المشروع عبارة عن لوحة معلومات تحليلية شاملة لمبيعات التجزئة تم إنشاؤها باستخدام Power BI. الهدف هو تقديم رؤى حول المبيعات وسلوك العملاء وأداء المنتجات. تتيح لوحة المعلومات للمستخدمين تصفية البيانات ديناميكيًا واستكشاف الاتجاهات عبر فئات وشرائح وفترات زمنية مختلفة.
-
----
-
-## لقطات شاشة لوحة المعلومات
-
-إليك نظرة على الصفحات المختلفة للوحة المعلومات:
-
-**1. الصفحة الرئيسية (Home Page)** - ملخص لأهم مؤشرات الأداء الرئيسية (KPIs).
-![الصفحة الرئيسية](images/01_HomePage.png)
-
-**2. نظرة عامة على الطلبات (Orders Overview)** - تحليل متعمق لاتجاهات الطلبات، وأنماط الشحن، ومقارنة المبيعات بالأرباح بمرور الوقت.
-![نظرة عامة على الطلبات](images/03_OrdersOverview.png)
-
-**3. نظرة عامة على المنتجات (Products Overview)** - تحليل أداء المنتجات، والمبيعات حسب الفئة، والمنتجات الأكثر مبيعًا.
-![نظرة عامة على المنتجات](images/04_ProductsOverview.png)
-
-**4. نظرة عامة على العملاء (Customers Overview)** - رؤى حول شرائح العملاء، والتوزيع الجغرافي، وأبرز العملاء من حيث المبيعات.
-![نظرة عامة على العملاء](images/05_CustomersOverview.png)
+This project is a comprehensive retail analysis dashboard built with Power BI. The goal is to provide insights into sales, customer behavior, and product performance. The dashboard allows users to dynamically filter data and explore trends across different categories, segments, and time periods.
 
 ---
 
-## نموذج البيانات (Data Model)
+## Dashboard Screenshots
 
-يتبع المشروع مخططًا نجميًا (Star Schema)، وهو أفضل ممارسة لنمذجة البيانات في Power BI. يعمل هذا المخطط على تحسين الأداء وتبسيط حسابات DAX.
+Here's a look at the different pages of the dashboard:
 
-![نموذج البيانات](images/02_DataModel.png)
+**1. Home Page** - A summary of the most important Key Performance Indicators (KPIs).
+![Home Page](images/01_HomePage.png)
+
+**2. Orders Overview** - A deep dive into order trends, shipping modes, and sales vs. profit over time.
+![Orders Overview](images/03_OrdersOverview.png)
+
+**3. Products Overview** - Analysis of product performance, sales by category, and top-selling items.
+![Products Overview](images/04_ProductsOverview.png)
+
+**4. Customers Overview** - Insights into customer segments, geographic distribution, and top customers by sales.
+![Customers Overview](images/05_CustomersOverview.png)
+
+---
+
+## Data Model
+
+The project follows a star schema, which is a best practice for Power BI data modeling. This optimizes performance and simplifies DAX calculations by connecting a central fact table (`FactOrder`) to multiple dimension tables (`DimProduct`, `DimCustomer`, `DimLocation`, `DimDate`).
+
+![Data Model](images/02_DataModel.png)
 
 ---
 
-## الميزات والرؤى الرئيسية
+## Key Features & Insights
 
-* **مؤشرات الأداء الرئيسية (KPIs):** تتبع لوحة المعلومات المقاييس الرئيسية مثل إجمالي المبيعات (2.30 مليون)، وإجمالي الربح (286 ألف)، وعدد العملاء (793)، وإجمالي الكمية المباعة (38 ألف).
-* **تحليل الأداء الزمني:** يمكن للمستخدمين تحليل المبيعات والأرباح حسب السنة والربع والشهر.
-* **التحليل الجغرافي:** خرائط تفاعلية توضح المبيعات حسب الولاية والمنطقة.
-* **شرائح العملاء:** تحليل أداء شرائح العملاء المختلفة (Consumer, Corporate, Home Office).
-* **أداء المنتجات:** تحديد المنتجات والفئات الفرعية الأعلى مبيعًا.
+* **KPIs:** The dashboard tracks key metrics such as Total Sales ($2.30M), Total Profit ($286K), Number of Customers (793), and Total Quantity Sold (38K).
+* **Time Series Analysis:** Users can analyze sales and order trends over time by year, quarter, and month.
+* **Geographical Analysis:** Interactive maps showcase sales performance across different states and regions.
+* **Customer Segmentation:** The dashboard breaks down performance by customer segments (Consumer, Corporate, Home Office).
+* **Product Performance:** Identifies top-selling products, categories, and sub-categories to inform inventory and marketing decisions.
 
-## الأدوات المستخدمة
+## Tools Used
 
-* **Microsoft Power BI:** لنمذجة البيانات، وإنشاء المقاييس (DAX)، وتصميم لوحة المعلومات.
-* **Power Query:** لتنظيف وتحويل البيانات.
-
----
+* **Microsoft Power BI:** Used for data modeling, creating DAX measures, and designing the interactive dashboard.
+* **Power Query:** Used for data cleaning, transformation, and preparation (ETL processes).
